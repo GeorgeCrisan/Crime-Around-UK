@@ -1,11 +1,15 @@
 import React from 'react';
+import Connect from './Components/Connect';
+
 
 function App() {
   return (
     <div className="App">
-      Fuck
+
+      <h1>React context api</h1>
+
     </div>
   );
 }
 
-export default App;
+export default Connect(App);

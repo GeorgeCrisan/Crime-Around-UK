@@ -22,7 +22,7 @@ export function fetchData1(url, params) {
             res => res.json(),
             error => {
                 console.log('An error occurred', error);
-                dispatch(errorData1());
+                dispatch(errorData1(error));
             }
         ).then(data => {
             dispatch(receivedData1(data));
